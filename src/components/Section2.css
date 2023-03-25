@@ -1,0 +1,270 @@
+.section2 {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.s2sub1 {
+  margin-left: 8rem;
+  margin-right: 2rem;
+}
+
+.p1,
+.p2 {
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+.head {
+  margin-bottom: 3rem;
+}
+
+.earn {
+  color: #245b95;
+}
+
+.box {
+  margin-top: 6rem;
+}
+
+.graph {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0rem;
+  bottom: 10rem;
+  opacity: 0.65;
+}
+
+.para4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rbd2 {
+  top: 0px;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  background-color: #d8d8d9;
+  border: 1px solid #d8d8d9;
+}
+
+.divs2 {
+  display: flex;
+  flex-direction: column;
+}
+.sq {
+  margin: 0;
+  padding: 0;
+}
+
+.ack {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-bottom: 2rem;
+}
+
+.div1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.temp {
+  padding-top: 1rem;
+  border: 1px solid #fff;
+  border-top: 1px solid #cae0ed;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #b5d2e2;
+  position: relative;
+  z-index: 2;
+}
+.sub2sub1,
+.sub2sub2 {
+  padding-left: 1rem;
+  background-color: #fff;
+}
+.sub2sub1 {
+  position: relative;
+}
+
+.batch {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.cutPrice {
+  font-size: 2.5rem;
+  color: #817979;
+  font-weight: 900;
+}
+
+.cp {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #1d5584;
+}
+
+.bt {
+  color: #3164ab;
+}
+
+.sub2sub2 {
+  background-color: #05455f;
+  color: #fff;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-left: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.sub2sub2sub1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sub1Square {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  padding-right: 2.5rem;
+}
+.rbd3 {
+  width: 3rem;
+  height: 3rem;
+  top: 0;
+  border-top: 1px solid #007c99;
+  border-bottom: 1px solid #0a4c5b;
+}
+
+.now {
+  width: 100%;
+  padding: 0.74rem;
+  margin-bottom: 2rem;
+}
+
+/* css for graph and card  */
+
+.banner {
+  /* color: white; */
+  object-fit: contain;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./images/graph.png");
+}
+
+.aa {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  opacity: 0.25;
+  width: 50%;
+  top: -17px;
+  height: 148%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Phone css down below */
+
+@media screen and (max-width:1300px) {
+    .div1{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:1100px) {
+    .div1{
+        font-size: 12pxm;
+    }
+
+    .div2{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+  .graph {
+    display: none;
+  }
+  .section2 {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s2sub1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .earn {
+    display: block;
+    text-align: center;
+  }
+  .p1,
+  .p2,
+  .para {
+    text-align: center;
+  }
+  .rbd2,
+  .rbd3 {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+  }
+
+  .div1 {
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .s2sub2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .temp {
+    width: 100%;
+  }
+
+  .cont {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .p1,
+  .p2,
+  .earn {
+    font-size: 2rem;
+  }
+
+  .para4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cutPrice {
+    font-size: 1.5rem;
+  }
+
+  .cp {
+    font-size: 2rem;
+  }
+
+  .aa {
+    height: 147%;
+  }
+}
