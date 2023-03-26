@@ -81,6 +81,20 @@
   }
 }
 
+@media screen and (max-width:500px){
+  .heading{
+    font-size: 1.75rem;
+  }
+
+  .des{
+    font-size: 14px;
+  }
+  .sub1Square{
+    font-size: 10px;
+  }
+
+}
+
 @media screen and (max-width:300px) {
     .heading{
       font-size: 1rem;
